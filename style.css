@@ -10,6 +10,11 @@ h1 {
     margin: 18px 0;
 }
 
+ul.detail-box {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
 .center {
     margin: 0 auto;
     width: 93%;
@@ -35,6 +40,60 @@ header {
     justify-content: center;
 }
 
+.school-pic, .company-pic {
+    margin: 0 auto 18px;
+    height: 88px;
+    display: block;
+    width: auto;
+}
+
 img {
     max-width: 100%;
+}
+.profile-img {
+    width: 215px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: block;
+    height: 215px;
+}
+
+.experience {
+    margin-top: 40px;
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.exp-box {
+    width: 100%;
+    max-width: 290px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+.skills {
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+.detail-box {
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    padding: 20px;
+}
+
+.project-item {
+    border-radius: 12px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    background-color: #ffffff;
+    padding: 20px;
 }
