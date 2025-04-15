@@ -1,4 +1,40 @@
-.profile-img {
-    width: 200px;
-    height: 200px;
+body {
+    background-color: #f4f6f9;
+    color: #353535;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    margin: 18px 0;
+}
+
+.center {
+    margin: 0 auto;
+    width: 93%;
+    padding: 20px;
+    max-width: 1240px;
+}
+
+header {
+    background-color: #e9eef3;
+    padding: 20px 0;
+}
+
+.intro-part p {
+    margin: 10px auto;
+    max-width: 740px;
+    text-align: center;
+}
+
+.links {
+    margin: 20px 0;
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
 }

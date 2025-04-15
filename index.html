@@ -1,122 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="app.js"></script>
 
     <title>Yuri Kim</title>
 </head>
 
 <body>
-    <div class="center">
-        <div class="intro-part">
-            <img src="images/profile.jpg" class="profile-img">
-            <h1>Hi, I'm Yuri!</h1>
-            <div class="links">
-                <a href="https://github.com/yuridekim">GitHub</a>
-                <a href="https://www.linkedin.com/in/yuri-kim-kr/">LinkedIn</a>
-                <a href="mailto:yurikim@ucla.edu">Email</a>
+    <header>
+        <div class="center">
+            <div class="intro-part">
+                <img src="images/profile.jpg" class="profile-img" alt="Profile Picture">
+                <h1>Hi, I'm Yuri!</h1>
+                <div class="links">
+                    <a href="https://github.com/yuridekim">GitHub</a>
+                    <a href="https://www.linkedin.com/in/yuri-kim-kr/">LinkedIn</a>
+                    <a href="mailto:yurikim@ucla.edu">Email</a>
+                </div>
+
+                <p>I'm a CS graduate student at UCLA with industry experience at SAP. I specialize in cloud services, backend development, and machine learning systems.</p>
+                <p>
+                    Feel free to <a href="mailto:yurikim@ucla.edu">email me</a> or check out my <a href="https://github.com/yuridekim">projects</a>!
+                </p>
             </div>
-
-            <p>I'm a CS graduate student at UCLA with industry experience at SAP. I specialize in cloud services, backend development, and machine learning systems.</p>
-            <p>
-                Feel free to <a href="mailto:yurikim@ucla.edu">email me</a> or check out my <a href="https://github.com/yuridekim">projects</a>!
-            </p>
         </div>
+    </header>
 
-        <div class="experience">
-            <div class="exp-box" id="sap">
-                <a href="#detail1">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg" class="company-pic" />
+    <main>
+        <div class="center">
+            <section class="experience">
+                <div class="exp-box" id="sap">
+                    <a href="#detail1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg" class="company-pic" alt="SAP Logo" />
+                        <h2>SAP Labs</h2>
+                        <p>Software Engineer - Cloud Services Team</p>
+                        <p>May 2023 - Sep 2024</p>
+                    </a>
+                </div>
+                
+                <div class="exp-box" id="ucla">
+                    <a href="#detail2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/UCLA_Bruins_primary_logo.svg/400px-UCLA_Bruins_primary_logo.svg.png" class="school-pic" alt="UCLA Logo" />
+                        <h2>UCLA</h2>
+                        <p>MS in Computer Science</p>
+                        <p>2024 - 2026 (Expected)</p>
+                    </a>
+                </div>
+                
+                <div class="exp-box" id="korea">
+                    <a href="#detail3">
+                        <img src="images/korea-uni.jpg" class="school-pic" alt="Korea University Logo" />
+                        <h2>Korea University</h2>
+                        <p>BS in Computer Science & Statistics</p>
+                        <p>2018 - 2023</p>
+                    </a>
+                </div>
+            </section>
+
+            <div id="detail1" class="detail-view">
+                <div class="detail-box">
                     <h2>SAP Labs</h2>
-                    <p>Software Engineer - Cloud Services Team</p>
-                    <p>May 2023 - Sep 2024</p>
-                </a>
+                    <p>Software Engineer - Cloud Services Team<br>May 2023 - Sep 2024</p>
+                    <p>Developed cloud services for database storage snapshots and multitenancy subscription using Go and Python in K8s environments. Implemented Prometheus dashboards and alerts, reducing ticket processing time by 40%.</p>
+                    <h3>Skills Used</h3>
+                    <ul>
+                        <li>Go, Python, Kubernetes</li>
+                        <li>CI/CD with Jenkins</li>
+                        <li>Cloud platforms (AWS, GCP, Azure)</li>
+                    </ul>
+                </div>
             </div>
             
-            <div class="exp-box" id="ucla">
-                <a href="#detail2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/UCLA_Bruins_primary_logo.svg/400px-UCLA_Bruins_primary_logo.svg.png" class="school-pic" />
+            <div id="detail2" class="detail-view">
+                <div class="detail-box">
                     <h2>UCLA</h2>
-                    <p>MS in Computer Science</p>
-                    <p>2024 - 2026 (Expected)</p>
-                </a>
+                    <p>MS in Computer Science<br>2024 - 2026 (Expected)</p>
+                    <p>Graduate Student Researcher developing a scholar tracking web platform with React. Focused on distributed systems and machine learning.</p>
+                    <h3>Notable Coursework</h3>
+                    <ul>
+                        <li>Distributed Systems</li>
+                        <li>Natural Language Processing</li>
+                        <li>Cloud Systems</li>
+                    </ul>
+                </div>
             </div>
             
-            <div class="exp-box" id="korea">
-                <a href="#detail3">
-                    <img src="images/korea-uni.jpg" class="school-pic" />
+            <div id="detail3" class="detail-view">
+                <div class="detail-box">
                     <h2>Korea University</h2>
-                    <p>BS in Computer Science & Statistics</p>
-                    <p>2018 - 2023</p>
-                </a>
-            </div>
-        </div>
-
-        <div id="detail1" class="detail-view">
-            <div class="detail-box">
-                <h2>SAP Labs</h2>
-                <p>Software Engineer - Cloud Services Team<br>May 2023 - Sep 2024</p>
-                <p>Developed cloud services for database storage snapshots and multitenancy subscription using Go and Python in K8s environments. Implemented Prometheus dashboards and alerts, reducing ticket processing time by 40%.</p>
-                <h3>Skills Used</h3>
-                <ul>
-                    <li>Go, Python, Kubernetes</li>
-                    <li>CI/CD with Jenkins</li>
-                    <li>Cloud platforms (AWS, GCP, Azure)</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div id="detail2" class="detail-view">
-            <div class="detail-box">
-                <h2>UCLA</h2>
-                <p>MS in Computer Science<br>2024 - 2026 (Expected)</p>
-                <p>Graduate Student Researcher developing a scholar tracking web platform with React. Focused on distributed systems and machine learning.</p>
-                <h3>Notable Coursework</h3>
-                <ul>
-                    <li>Distributed Systems</li>
-                    <li>Natural Language Processing</li>
-                    <li>Cloud Systems</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div id="detail3" class="detail-view">
-            <div class="detail-box">
-                <h2>Korea University</h2>
-                <p>BS in Computer Science & Statistics<br>2018 - 2023</p>
-                <p>Graduated as Top of the Class, Dean's List.</p>
-                <h3>Notable Coursework</h3>
-                <ul>
-                    <li>Operating Systems</li>
-                    <li>Statistical Machine Learning</li>
-                    <li>Algorithms & Data Structures</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-item">
-                <h3>FuncProphet</h3>
-                <p>A predictive serverless scheduler that cuts cold-start latency and doubles instance utilization using lightweight seasonality modeling.</p>
-                <a href="https://github.com/yuridekim">View on GitHub</a>
+                    <p>BS in Computer Science & Statistics<br>2018 - 2023</p>
+                    <p>Graduated as Top of the Class, Dean's List.</p>
+                    <h3>Notable Coursework</h3>
+                    <ul>
+                        <li>Operating Systems</li>
+                        <li>Statistical Machine Learning</li>
+                        <li>Algorithms & Data Structures</li>
+                    </ul>
+                </div>
             </div>
             
-            <div class="project-item">
-                <h3>K8s Operator for OS Provisioning</h3>
-                <p>Custom Kubernetes controllers and resources for OS provisioning on bare metal with high test coverage.</p>
-                <a href="https://github.com/yuridekim">View on GitHub</a>
-            </div>
+            <section class="projects">
+                <h2>Featured Projects</h2>
+                <div class="project-item">
+                    <h3>FuncProphet</h3>
+                    <p>A predictive serverless scheduler that cuts cold-start latency and doubles instance utilization using lightweight seasonality modeling.</p>
+                    <a href="https://github.com/yuridekim">View on GitHub</a>
+                </div>
+                
+                <div class="project-item">
+                    <h3>K8s Operator for OS Provisioning</h3>
+                    <p>Custom Kubernetes controllers and resources for OS provisioning on bare metal with high test coverage.</p>
+                    <a href="https://github.com/yuridekim">View on GitHub</a>
+                </div>
+            </section>
+            
+            <section class="skills">
+                <h2>Skills</h2>
+                <p>Go • Python • Kubernetes • Docker • Prometheus • Jenkins • PyTorch • TensorFlow • React • C++ • SQL</p>
+            </section>
         </div>
-        
-        <div class="skills">
-            <h2>Skills</h2>
-            <p>Go • Python • Kubernetes • Docker • Prometheus • Jenkins • PyTorch • TensorFlow • React • C++ • SQL</p>
+    </main>
+
+    <footer>
+        <div class="center">
+            <p>&copy; 2025 Yuri Kim</p>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
