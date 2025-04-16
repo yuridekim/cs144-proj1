@@ -60,8 +60,12 @@ ul {
     margin-left: 25px;
 }
 
-.skills-list li {
+.skills-list > li {
     margin-bottom: 10px;
+}
+
+nav.links a[href*="."] {
+    color: green;
 }
 
 .nested-list {
@@ -103,6 +107,7 @@ nav.links {
 nav.links a {
     flex: 0 1 auto;
     transition: transform 0.3s ease;
+    display: block;
 }
 
 nav.links a:hover {
