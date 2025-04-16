@@ -19,11 +19,11 @@
             <div class="intro-part">
                 <img src="images/profile.jpg" class="profile-img" alt="Yuri Kim's profile picture">
                 <h1 class="page-title">Hi, I'm Yuri!</h1>
-                <div class="links">
+                <nav class="links">
                     <a href="https://github.com/yuridekim">GitHub</a>
                     <a href="https://www.linkedin.com/in/yuri-kim-kr/">LinkedIn</a>
                     <a href="mailto:yurikim@ucla.edu">Email</a>
-                </div>
+                </nav>
 
                 <p>I'm a CS graduate student at UCLA with industry experience at SAP. I specialize in cloud services, backend development, and machine learning systems.</p>
                 <p>
@@ -65,21 +65,31 @@
             </section>
 
             <div id="detail1" class="detail-view">
-                <div class="detail-box">
+                <article class="detail-box">
                     <h2>SAP Labs</h2>
                     <p>Software Engineer - Cloud Services Team<br>May 2023 - Sep 2024</p>
                     <p>Developed cloud services for database storage snapshots and multitenancy subscription using Go and Python in K8s environments. Implemented Prometheus dashboards and alerts, reducing ticket processing time by 40%.</p>
                     <h3>Skills Used</h3>
-                    <ul>
-                        <li>Go, Python, Kubernetes</li>
-                                <li>CI/CD with Jenkins</li>
+                    <ul class="skills-list">
+                        <li>Programming Languages
+                            <ul class="nested-list">
+                                <li>Go</li>
+                                <li>Python</li>
+                            </ul>
+                        </li>
+                        <li>Technologies
+                            <ul class="nested-list">
+                                <li>Kubernetes</li>
+                                <li>Jenkins</li>
+                            </ul>
+                        </li>
                         <li>Cloud platforms (AWS, GCP, Azure)</li>
                     </ul>
-                </div>
+                </article>
             </div>
             
             <div id="detail2" class="detail-view">
-                <div class="detail-box">
+                <article class="detail-box">
                     <h2>UCLA</h2>
                     <p>MS in Computer Science<br>2024 - 2026 (Expected)</p>
                     <p>Graduate Student Researcher developing a scholar tracking web platform with React. Focused on distributed systems and machine learning.</p>
@@ -89,11 +99,11 @@
                         <li>Natural Language Processing</li>
                         <li>Cloud Systems</li>
                     </ul>
-                </div>
+                </article>
             </div>
             
             <div id="detail3" class="detail-view">
-                <div class="detail-box">
+                <article class="detail-box">
                     <h2>Korea University</h2>
                     <p>BS in Computer Science & Statistics<br>2018 - 2023</p>
                     <p>Graduated as Top of the Class, Dean's List.</p>
@@ -103,28 +113,28 @@
                         <li>Statistical Machine Learning</li>
                         <li>Algorithms & Data Structures</li>
                     </ul>
-                </div>
+                </article>
             </div>
             
             <section class="projects">
                 <h2>Featured Projects</h2>
-                <div class="project-item">
+                <article class="project-item">
                     <h3>FuncProphet</h3>
                     <p>A predictive serverless scheduler that cuts cold-start latency and doubles instance utilization using lightweight seasonality modeling.</p>
                     <a href="https://github.com/yuridekim">View on GitHub</a>
-                </div>
+                </article>
                 
-                <div class="project-item">
+                <article class="project-item">
                     <h3>K8s Operator for OS Provisioning</h3>
                     <p>Custom Kubernetes controllers and resources for OS provisioning on bare metal with high test coverage.</p>
                     <a href="https://github.com/yuridekim">View on GitHub</a>
-                </div>
+                </article>
             </section>
             
-            <section class="skills">
+            <aside class="skills">
                 <h2>Skills</h2>
                 <p>Go • Python • Kubernetes • Docker • Prometheus • Jenkins • PyTorch • TensorFlow • React • C++ • SQL</p>
-            </section>
+            </aside>
         </div>
     </main>
 
