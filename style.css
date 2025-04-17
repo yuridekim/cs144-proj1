@@ -280,3 +280,56 @@ a {
         padding: 15px;
     }
 }
+
+.chat-request {
+    margin: 25px 0;
+}
+
+.wrapper {
+    width: 90%;
+}
+
+fieldset {
+    border: 1px solid #888;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+.input-block {
+    padding: 8px 0;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 12px;
+    padding: 6px 12px;
+    background-color: #4a86e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 3px;
+    background-color: #4a86e8;
+    margin-right: 8px;
+    vertical-align: middle;
+}
