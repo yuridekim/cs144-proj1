@@ -114,6 +114,20 @@ nav.links a:hover {
     transform: translateY(-3px);
 }
 
+a:hover {
+    text-decoration: underline;
+    color: var(--gradient-start);
+}
+
+a:visited {
+    color: purple;
+}
+
+a:visited:hover {
+    color: var(--gradient-end);
+    text-decoration: underline;
+}
+
 .school-pic, .company-pic {
     margin: 0 auto 18px;
     height: 88px;
